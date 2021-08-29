@@ -192,6 +192,7 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
 
         log("on pause");
 
+        cameraEx.cancelTakePicture();
         cancelTakiePictureHandler.removeCallbacks(cancelTakePictureRunnable);
         shootRunnableHandler.removeCallbacks(shootRunnable);
 

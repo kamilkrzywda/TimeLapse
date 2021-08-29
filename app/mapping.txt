@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 1.5.64
 # min_api: 10
-# pg_map_id: 2146c83
+# pg_map_id: 01e2a16
 com.github.ma1co.pmcademo.app.AppNotificationManager -> fb.a:
     com.github.ma1co.pmcademo.app.AppNotificationManager instance -> b
     java.util.ArrayList listeners -> a
@@ -327,26 +327,26 @@ com.jonasjuffinger.timelapse.ShootActivity -> com.jonasjuffinger.timelapse.Shoot
     java.lang.Runnable shootRunnable -> n
     1:1:void <init>():23:23 -> <init>
     2:3:void <init>():50:51 -> <init>
-    4:5:void <init>():234:235 -> <init>
-    1:2:java.lang.String getBatteryPercentage():266:267 -> J
-    3:4:java.lang.String getBatteryPercentage():269:270 -> J
-    5:6:java.lang.String getBatteryPercentage():272:273 -> J
-    7:7:java.lang.String getBatteryPercentage():283:283 -> J
-    1:1:java.lang.String getRemainingTime():287:287 -> K
-    1:1:void shoot():247:247 -> L
-    2:3:void shoot():249:250 -> L
-    4:4:void shoot():252:252 -> L
-    5:5:void shoot():254:254 -> L
+    4:5:void <init>():235:236 -> <init>
+    1:2:java.lang.String getBatteryPercentage():267:268 -> J
+    3:4:java.lang.String getBatteryPercentage():270:271 -> J
+    5:6:java.lang.String getBatteryPercentage():273:274 -> J
+    7:7:java.lang.String getBatteryPercentage():284:284 -> J
+    1:1:java.lang.String getRemainingTime():288:288 -> K
+    1:1:void shoot():248:248 -> L
+    2:3:void shoot():250:251 -> L
+    4:4:void shoot():253:253 -> L
+    5:5:void shoot():255:255 -> L
     1:1:boolean access$000(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> a
     2:2:boolean access$002(com.jonasjuffinger.timelapse.ShootActivity,boolean):23:23 -> a
     1:1:android.hardware.Camera access$100(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> b
-    2:2:void setColorDepth(boolean):305:305 -> b
-    3:3:void log(java.lang.String):310:310 -> b
+    2:2:void setColorDepth(boolean):306:306 -> b
+    3:3:void log(java.lang.String):311:311 -> b
     1:1:android.widget.TextView access$1000(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> c
     1:1:java.lang.String access$1100(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> d
     1:1:android.widget.TextView access$1200(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> e
     1:1:java.lang.String access$1300(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> f
-    2:2:void onAnyKeyDown():292:292 -> f
+    2:2:void onAnyKeyDown():293:293 -> f
     1:1:android.widget.TextView access$1400(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> g
     1:1:android.view.SurfaceView access$200(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> h
     1:1:com.jonasjuffinger.timelapse.Settings access$300(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> i
@@ -365,14 +365,14 @@ com.jonasjuffinger.timelapse.ShootActivity -> com.jonasjuffinger.timelapse.Shoot
     1:2:void onPause():188:189 -> onPause
     3:3:void onPause():191:191 -> onPause
     4:4:void onPause():193:193 -> onPause
-    5:6:void onPause():195:196 -> onPause
-    7:8:void onPause():198:199 -> onPause
-    9:9:void onPause():201:201 -> onPause
-    10:11:void onPause():206:207 -> onPause
-    12:13:void onPause():209:210 -> onPause
-    14:15:void onPause():213:214 -> onPause
-    16:18:void onPause():216:218 -> onPause
-    19:19:void onPause():221:221 -> onPause
+    5:7:void onPause():195:197 -> onPause
+    8:9:void onPause():199:200 -> onPause
+    10:10:void onPause():202:202 -> onPause
+    11:12:void onPause():207:208 -> onPause
+    13:14:void onPause():210:211 -> onPause
+    15:16:void onPause():214:215 -> onPause
+    17:19:void onPause():217:219 -> onPause
+    20:20:void onPause():222:222 -> onPause
     1:1:void onResume():116:116 -> onResume
     2:4:void onResume():118:120 -> onResume
     5:5:void onResume():125:125 -> onResume
@@ -388,7 +388,7 @@ com.jonasjuffinger.timelapse.ShootActivity -> com.jonasjuffinger.timelapse.Shoot
     18:19:void onResume():169:170 -> onResume
     20:20:void onResume():173:173 -> onResume
     21:23:void onResume():175:177 -> onResume
-    1:2:void surfaceCreated(android.view.SurfaceHolder):228:229 -> surfaceCreated
+    1:2:void surfaceCreated(android.view.SurfaceHolder):229:230 -> surfaceCreated
     1:1:boolean onMenuKeyUp():182:182 -> y
 com.jonasjuffinger.timelapse.ShootActivity$1 -> com.jonasjuffinger.timelapse.ShootActivity$a:
     com.jonasjuffinger.timelapse.ShootActivity this$0 -> a
@@ -402,9 +402,9 @@ com.jonasjuffinger.timelapse.ShootActivity$1$1 -> com.jonasjuffinger.timelapse.S
     1:1:void run():80:80 -> run
 com.jonasjuffinger.timelapse.ShootActivity$2 -> com.jonasjuffinger.timelapse.ShootActivity$b:
     com.jonasjuffinger.timelapse.ShootActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.ShootActivity):235:235 -> <init>
-    1:4:void run():238:241 -> run
+    1:1:void <init>(com.jonasjuffinger.timelapse.ShootActivity):236:236 -> <init>
+    1:4:void run():239:242 -> run
 com.jonasjuffinger.timelapse.ShootActivity$3 -> com.jonasjuffinger.timelapse.ShootActivity$c:
     com.jonasjuffinger.timelapse.ShootActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.ShootActivity):254:254 -> <init>
-    1:3:void run():257:259 -> run
+    1:1:void <init>(com.jonasjuffinger.timelapse.ShootActivity):255:255 -> <init>
+    1:3:void run():258:260 -> run
