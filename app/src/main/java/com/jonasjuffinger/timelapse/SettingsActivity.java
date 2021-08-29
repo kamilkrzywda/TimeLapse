@@ -45,7 +45,7 @@ public class SettingsActivity extends BaseActivity
 
     private CheckBox cbSilentShutter;
     private CheckBox cbAEL;
-    private CheckBox cbBRS;
+    // private CheckBox cbBRS;
     private CheckBox cbMF;
     private CheckBox cbDOFF;
 
@@ -62,7 +62,7 @@ public class SettingsActivity extends BaseActivity
 
         settings = new Settings();
         settings.load(this);
-        fps = 24;
+        fps = 30;
 
         bnStart = (Button) findViewById(R.id.bnStart);
         bnStart.setOnClickListener(bnStartOnClickListener);
@@ -89,7 +89,7 @@ public class SettingsActivity extends BaseActivity
 
         cbSilentShutter = (CheckBox) findViewById(R.id.cbSilentShutter);
         cbAEL  = (CheckBox) findViewById(R.id.cbAEL);
-        cbBRS  = (CheckBox) findViewById(R.id.cbBRC);
+        //cbBRS  = (CheckBox) findViewById(R.id.cbBRC);
         cbMF   = (CheckBox) findViewById(R.id.cbMF);
         cbDOFF = (CheckBox) findViewById(R.id.cbDOFF);
 
@@ -118,8 +118,8 @@ public class SettingsActivity extends BaseActivity
         cbAEL.setChecked(settings.ael);
         cbAEL.setOnCheckedChangeListener(cbAELOnCheckListener);
 
-        cbBRS.setChecked(settings.brs);
-        cbBRS.setOnCheckedChangeListener(cbBRSOnCheckListener);
+        // cbBRS.setChecked(settings.brs);
+        // cbBRS.setOnCheckedChangeListener(cbBRSOnCheckListener);
 
         cbMF.setChecked(settings.mf);
         cbMF.setOnCheckedChangeListener(cbMFOnCheckListener);
@@ -165,37 +165,16 @@ public class SettingsActivity extends BaseActivity
 
             i++;
 
-            if (i == 1) {
-                settings.interval = 0;
-                intervalTextValue = "burst";
-                intervalUnit = "";
-            }
-            else if(i < 41) {
-                settings.interval = i * 0.5;
+            if( i<=60 ){
+                settings.interval = i;
                 intervalTextValue = Double.toString(settings.interval);
                 intervalUnit = "s";
+            }else{
+                settings.interval = (i - 60) * (i - 60) + 60;
+                intervalTextValue = Double.toString(settings.interval);
+                intervalUnit = "s";
+            }
 
-            }
-            else if(i < 60) {
-                settings.interval = (i-40) + 20;
-                intervalTextValue = Double.toString(settings.interval);
-                intervalUnit = "s";
-            }
-            else if(i < 76) {
-                settings.interval = (i-60) * 5 + 40;
-                intervalTextValue = Double.toString(settings.interval);
-                intervalUnit = "s";
-            }
-            else if(i < 93) {
-                settings.interval = (i-76) * 30 + 120;
-                intervalTextValue = Double.toString((i-76) * 0.5 + 2);
-                intervalUnit = "min";
-            }
-            else {
-                settings.interval = (i-93) * 60 + 660;
-                intervalTextValue = Integer.toString(i-93+11);
-                intervalUnit = "min";
-            }
             tvIntervalValue.setText(intervalTextValue);
             tvIntervalUnit.setText(intervalUnit);
 
@@ -263,18 +242,18 @@ public class SettingsActivity extends BaseActivity
             if(i < 6) {
                 settings.delay = i;
                 delayTextValue = Double.toString(settings.delay);
-                delayUnit = "min";
+                delayUnit = "s";
 
             }
             else if(i < 16) {
                 settings.delay = (i-5)*5 + 5;
                 delayTextValue = Double.toString(settings.delay);
-                delayUnit = "min";
+                delayUnit = "s";
             }
             else {
                 settings.delay = (i-15) * 60;
                 delayTextValue = Double.toString(i-15);
-                delayUnit = "h";
+                delayUnit = "min";
             }
             tvDelayValue.setText(delayTextValue);
             tvDelayUnit.setText(delayUnit);
@@ -316,12 +295,12 @@ public class SettingsActivity extends BaseActivity
         }
     };
 
-    CheckBox.OnCheckedChangeListener cbBRSOnCheckListener = new CheckBox.OnCheckedChangeListener() {
-        @Override
-        public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-            settings.brs = b;
-        }
-    };
+    // CheckBox.OnCheckedChangeListener cbBRSOnCheckListener = new CheckBox.OnCheckedChangeListener() {
+    //     @Override
+    //     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+    //         settings.brs = b;
+    //     }
+    // };
 
     CheckBox.OnCheckedChangeListener cbMFOnCheckListener = new CheckBox.OnCheckedChangeListener() {
         @Override

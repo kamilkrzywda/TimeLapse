@@ -20,7 +20,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class ShootActivity extends BaseActivity implements SurfaceHolder.Callback, CameraEx.ShutterListener
+public class ShootActivity extends BaseActivity implements SurfaceHolder.Callback
 {
     private Settings settings;
 
@@ -45,14 +45,7 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
 
     private Display display;
 
-    static private final boolean SHOW_END_SCREEN = true;
-
-    int getcnt(){
-        if(settings.brs){
-            return 3;
-        }
-        return 1;
-    }
+    static private final boolean SHOW_END_SCREEN = false;
 
     private Handler shootRunnableHandler = new Handler();
     private final Runnable shootRunnable = new Runnable()
@@ -68,24 +61,9 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
                     display.off();
             }
 
-            if(burstShooting) {
+            if(shotCount < settings.shotCount) {
                 shoot();
-            }
-            else if(shotCount < settings.shotCount * getcnt()) {
-                long remainingTime = Math.round(shootTime + settings.interval * 1000 - System.currentTimeMillis());
-                if(brck.get()>0){
-                    remainingTime = -1;
-                }
-
-                log("  Remaining Time: " + Long.toString(remainingTime));
-
-                if (remainingTime <= 150) { // 300ms is vaguely the time this postDelayed is to slow
-                    brck.getAndDecrement();
-                    shoot();
-                    display.on();
-                } else {
-                    shootRunnableHandler.postDelayed(this, remainingTime-150);
-                }
+                display.on();
             }
             else {
                 display.on();
@@ -107,14 +85,6 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
         }
     };
 
-    private Handler manualShutterCallbackCallRunnableHandler = new Handler();
-    private final Runnable manualShutterCallbackCallRunnable = new Runnable() {
-        @Override
-        public void run() {
-            onShutter(0, cameraEx);
-        }
-    };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         log("onCreate");
@@ -127,7 +97,7 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
 
         shotCount = 0;
         takingPicture = false;
-        burstShooting = settings.interval == 0;
+        burstShooting = false;
 
         tvCount = (TextView) findViewById(R.id.tvCount);
         tvBattery = (TextView) findViewById(R.id.tvBattery);
@@ -147,11 +117,10 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
 
         super.onResume();
         cameraEx = CameraEx.open(0, null);
-        cameraEx.setShutterListener(this);
         cameraSurfaceHolder.addCallback(this);
-        autoReviewControl = new CameraEx.AutoPictureReviewControl();
+        //autoReviewControl = new CameraEx.AutoPictureReviewControl();
         //autoReviewControl.setPictureReviewInfoHist(true);
-        cameraEx.setAutoPictureReviewControl(autoReviewControl);
+        //cameraEx.setAutoPictureReviewControl(autoReviewControl);
 
         final Camera.Parameters params = cameraEx.getNormalCamera().getParameters();
 
@@ -167,18 +136,7 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
 
         final CameraEx.ParametersModifier modifier = cameraEx.createParametersModifier(params);
 
-        if(burstShooting) {
-            try {
-                modifier.setDriveMode(CameraEx.ParametersModifier.DRIVE_MODE_BURST);
-                List driveSpeeds = modifier.getSupportedBurstDriveSpeeds();
-                modifier.setBurstDriveSpeed(driveSpeeds.get(driveSpeeds.size() - 1).toString());
-                modifier.setBurstDriveButtonReleaseBehave(CameraEx.ParametersModifier.BURST_DRIVE_BUTTON_RELEASE_BEHAVE_CONTINUE);
-            } catch (Exception ignored) {
-            }
-        }
-        else {
-            modifier.setDriveMode(CameraEx.ParametersModifier.DRIVE_MODE_SINGLE);
-        }
+        modifier.setDriveMode(CameraEx.ParametersModifier.DRIVE_MODE_SINGLE);
 
         // setSilentShutterMode doesn't exist on all cameras
         try {
@@ -197,19 +155,6 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
             //do nothing
         }
 
-        if(settings.brs){
-            try{
-                modifier.setDriveMode(CameraEx.ParametersModifier.DRIVE_MODE_BRACKET);
-                modifier.setBracketMode(CameraEx.ParametersModifier.BRACKET_MODE_EXPOSURE);
-                modifier.setExposureBracketMode(CameraEx.ParametersModifier.EXPOSURE_BRACKET_MODE_SINGLE);
-                modifier.setExposureBracketPeriod(30);
-                modifier.setNumOfBracketPicture(3);
-            }
-            catch (Exception e){
-                //do nothing
-            }
-        }
-
         cameraEx.getNormalCamera().setParameters(params);
 
         pictureReviewTime = 2; //autoReviewControl.getPictureReviewTime();
@@ -220,10 +165,6 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
         shootRunnableHandler.postDelayed(shootRunnable, (long) settings.delay * 1000 * 60);
         shootStartTime = System.currentTimeMillis() + settings.delay * 1000 * 60;
 
-        if(burstShooting) {
-            manualShutterCallbackCallRunnableHandler.postDelayed(manualShutterCallbackCallRunnable, 500);
-        }
-
         display = new Display(getDisplayManager());
 
         if(settings.displayOff) {
@@ -232,7 +173,7 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
 
         setAutoPowerOffMode(false);
 
-        tvCount.setText(Integer.toString(shotCount)+"/"+Integer.toString(settings.shotCount * getcnt()));
+        tvCount.setText(Integer.toString(shotCount)+"/"+Integer.toString(settings.shotCount));
         tvRemaining.setText(getRemainingTime());
         tvBattery.setText(getBatteryPercentage());
     }
@@ -252,6 +193,7 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
 
         log("on pause");
 
+        cancelTakiePictureHandler.removeCallbacks(cancelTakePictureRunnable);
         shootRunnableHandler.removeCallbacks(shootRunnable);
 
         if(cameraSurfaceHolder == null)
@@ -290,109 +232,34 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
         catch (IOException e) {}
     }
 
-    private void shoot() {
-        if(takingPicture)
-            return;
+    private Handler cancelTakiePictureHandler = new Handler();
+    private final Runnable cancelTakePictureRunnable = new Runnable() {
+        @Override
+        public void run() {
+            cameraEx.cancelTakePicture();
+            cameraEx.getNormalCamera().stopPreview();
+            stopPicturePreview = true;
+            shootRunnableHandler.postDelayed(shootRunnable, 300);
+            //cameraEx.getNormalCamera().takePicture(null, null, null);
+        }
+    };
 
+    private void shoot() {
         shootTime = System.currentTimeMillis();
 
-        cameraEx.burstableTakePicture();
+        cameraEx.getNormalCamera().takePicture(null, null, null);
+        cancelTakiePictureHandler.postDelayed(cancelTakePictureRunnable, (long) settings.interval * 1000);
 
         shotCount++;
 
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                tvCount.setText(Integer.toString(shotCount)+"/"+Integer.toString(settings.shotCount * getcnt()));
+                tvCount.setText(Integer.toString(shotCount)+"/"+Integer.toString(settings.shotCount));
                 tvRemaining.setText(getRemainingTime());
                 tvBattery.setText(getBatteryPercentage());
             }
         });
-    }
-
-    private AtomicInteger brck = new AtomicInteger(0);
-
-
-    // When burst shooting this method is not called automatically
-    // Therefore we called it every second manually
-    @Override
-    public void onShutter(int i, CameraEx cameraEx) {
-
-        if(brck.get()<0){
-            brck = new AtomicInteger(0);
-            if(getcnt()>1) {
-                brck = new AtomicInteger(2);
-            }
-        }
-
-        if(burstShooting) {
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    tvCount.setText(getRemainingTime());
-                    tvRemaining.setText("");
-                    tvBattery.setText(getBatteryPercentage());
-                }
-            });
-
-            // just keep shooting until we have all shots
-            if (System.currentTimeMillis() >= shootStartTime + settings.shotCount * 1000) {
-                this.cameraEx.cancelTakePicture();
-                stopPicturePreview = true;
-                display.on();
-
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        if(SHOW_END_SCREEN) {
-                            tvCount.setText("Thanks for using this app!");
-                            tvBattery.setVisibility(View.INVISIBLE);
-                            tvRemaining.setVisibility(View.INVISIBLE);
-                            llEnd.setVisibility(View.VISIBLE);
-                        }
-                        else {
-                            onBackPressed();
-                        }
-                    }
-                });
-            }
-            else {
-                manualShutterCallbackCallRunnableHandler.postDelayed(manualShutterCallbackCallRunnable, 500);
-            }
-        }
-        else {
-            this.cameraEx.cancelTakePicture();
-
-            //camera.startPreview();
-
-            if (shotCount < settings.shotCount * getcnt()) {
-
-                // remaining time to the next shot
-                double remainingTime = shootTime + settings.interval * 1000 - System.currentTimeMillis();
-                if (brck.get() > 0) {
-                    remainingTime = -1;
-                }
-
-                log("Remaining Time: " + remainingTime);
-
-                // if the remaining time is negative immediately take the next picture
-                if (remainingTime < 0) {
-                    stopPicturePreview = false;
-                    shootRunnableHandler.post(shootRunnable);
-                }
-                // show the preview picture for some time
-                else {
-                    long previewPictureShowTime = Math.round(Math.min(remainingTime, pictureReviewTime * 1000));
-                    log("  Stop preview in: " + previewPictureShowTime);
-                    reviewSurfaceView.setVisibility(View.VISIBLE);
-                    stopPicturePreview = true;
-                    shootRunnableHandler.postDelayed(shootRunnable, previewPictureShowTime);
-                }
-            } else {
-                stopPicturePreview = true;
-                shootRunnableHandler.postDelayed(shootRunnable, pictureReviewTime * 1000);
-            }
-        }
     }
 
     private String getBatteryPercentage()
@@ -418,10 +285,7 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
     }
 
     private String getRemainingTime() {
-        if(burstShooting)
-            return "" + Math.round((settings.shotCount * 1000 - System.currentTimeMillis() + shootStartTime) / 1000) + "s";
-        else
-            return "" + Math.round((settings.shotCount * getcnt() - shotCount) * settings.interval / 60) + "min";
+        return "" + Math.round((settings.shotCount - shotCount) * settings.interval / 60) + "min";
     }
 
     @Override

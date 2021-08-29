@@ -40,11 +40,11 @@ class Settings {
         rawDelay = 0;
         shotCount = 1;
         rawShotCount = 1;
-        displayOff = false;
-        silentShutter = true;
+        displayOff = true;
+        silentShutter = false;
         ael = true;
         fps = 0;
-        brs = true;
+        brs = false;
         mf = true;
     }
 

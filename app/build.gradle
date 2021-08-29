@@ -6,9 +6,10 @@ android {
     defaultConfig {
         applicationId "com.jonasjuffinger.timelapse"
         minSdkVersion 10
+        //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 10
         versionCode 7
-        versionName "1.4.0"
+        versionName "1.5.2"
     }
     buildTypes {
         release {
