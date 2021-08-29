@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 1.5.64
 # min_api: 10
-# pg_map_id: b1f13a6
+# pg_map_id: 2146c83
 com.github.ma1co.pmcademo.app.AppNotificationManager -> fb.a:
     com.github.ma1co.pmcademo.app.AppNotificationManager instance -> b
     java.util.ArrayList listeners -> a
@@ -204,31 +204,31 @@ com.jonasjuffinger.timelapse.SettingsActivity -> com.jonasjuffinger.timelapse.Se
     2:2:void <init>():22:22 -> <init>
     3:3:void <init>():140:140 -> <init>
     4:4:void <init>():157:157 -> <init>
-    5:5:void <init>():270:270 -> <init>
-    6:6:void <init>():284:284 -> <init>
-    7:7:void <init>():291:291 -> <init>
-    8:8:void <init>():305:305 -> <init>
-    9:9:void <init>():312:312 -> <init>
-    1:1:void updateTimes():320:320 -> J
-    2:5:void updateTimes():322:325 -> J
-    6:6:void updateTimes():331:331 -> J
-    7:8:void updateTimes():336:337 -> J
-    9:10:void updateTimes():341:342 -> J
-    11:12:void updateTimes():345:346 -> J
-    13:14:void updateTimes():350:351 -> J
-    15:16:void updateTimes():354:355 -> J
-    17:18:void updateTimes():358:359 -> J
+    5:5:void <init>():267:267 -> <init>
+    6:6:void <init>():281:281 -> <init>
+    7:7:void <init>():288:288 -> <init>
+    8:8:void <init>():302:302 -> <init>
+    9:9:void <init>():309:309 -> <init>
+    1:1:void updateTimes():317:317 -> J
+    2:5:void updateTimes():319:322 -> J
+    6:6:void updateTimes():328:328 -> J
+    7:8:void updateTimes():333:334 -> J
+    9:10:void updateTimes():338:339 -> J
+    11:12:void updateTimes():342:343 -> J
+    13:14:void updateTimes():347:348 -> J
+    15:16:void updateTimes():351:352 -> J
+    17:18:void updateTimes():355:356 -> J
     1:1:com.jonasjuffinger.timelapse.SettingsActivity access$000(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> a
     2:2:int access$802(com.jonasjuffinger.timelapse.SettingsActivity,int):20:20 -> a
     1:1:com.jonasjuffinger.timelapse.Settings access$100(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> b
-    2:4:boolean onKuruDialChanged(int):385:387 -> b
+    2:4:boolean onKuruDialChanged(int):382:384 -> b
     1:1:android.widget.TextView access$200(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> c
-    2:4:boolean onLowerDialChanged(int):371:373 -> c
+    2:4:boolean onLowerDialChanged(int):368:370 -> c
     1:1:android.widget.TextView access$300(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> d
     1:1:android.widget.TextView access$400(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> e
-    2:4:boolean onThirdDialChanged(int):378:380 -> e
+    2:4:boolean onThirdDialChanged(int):375:377 -> e
     1:1:android.widget.TextView access$500(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> f
-    2:4:boolean onUpperDialChanged(int):364:366 -> f
+    2:4:boolean onUpperDialChanged(int):361:363 -> f
     1:1:android.widget.TextView access$600(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> g
     1:1:android.widget.TextView access$700(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> h
     1:2:void onCreate(android.os.Bundle):55:56 -> onCreate
@@ -250,15 +250,15 @@ com.jonasjuffinger.timelapse.SettingsActivity -> com.jonasjuffinger.timelapse.Se
     47:48:void onCreate(android.os.Bundle):118:119 -> onCreate
     49:50:void onCreate(android.os.Bundle):124:125 -> onCreate
     51:52:void onCreate(android.os.Bundle):127:128 -> onCreate
-    1:1:boolean onMenuKeyUp():394:394 -> y
+    1:1:boolean onMenuKeyUp():391:391 -> y
 com.jonasjuffinger.timelapse.SettingsActivity$1 -> com.jonasjuffinger.timelapse.SettingsActivity$b:
     com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
     1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):140:140 -> <init>
     1:4:void onClick(android.view.View):143:146 -> onClick
 com.jonasjuffinger.timelapse.SettingsActivity$10 -> com.jonasjuffinger.timelapse.SettingsActivity$a:
     com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):312:312 -> <init>
-    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):315:315 -> onCheckedChanged
+    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):309:309 -> <init>
+    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):312:312 -> onCheckedChanged
 com.jonasjuffinger.timelapse.SettingsActivity$2 -> com.jonasjuffinger.timelapse.SettingsActivity$c:
     com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
     1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):149:149 -> <init>
@@ -270,46 +270,45 @@ com.jonasjuffinger.timelapse.SettingsActivity$3 -> com.jonasjuffinger.timelapse.
     2:3:void onProgressChanged(android.widget.SeekBar,int,boolean):169:170 -> onProgressChanged
     4:5:void onProgressChanged(android.widget.SeekBar,int,boolean):173:174 -> onProgressChanged
     6:7:void onProgressChanged(android.widget.SeekBar,int,boolean):178:179 -> onProgressChanged
-    8:9:void onProgressChanged(android.widget.SeekBar,int,boolean):181:182 -> onProgressChanged
-    10:10:void onProgressChanged(android.widget.SeekBar,int,boolean):184:184 -> onProgressChanged
-    11:11:void onProgressChanged(android.widget.SeekBar,int,boolean):186:186 -> onProgressChanged
+    8:8:void onProgressChanged(android.widget.SeekBar,int,boolean):181:181 -> onProgressChanged
+    9:9:void onProgressChanged(android.widget.SeekBar,int,boolean):183:183 -> onProgressChanged
 com.jonasjuffinger.timelapse.SettingsActivity$4 -> com.jonasjuffinger.timelapse.SettingsActivity$e:
     com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):194:194 -> <init>
-    1:1:void onProgressChanged(android.widget.SeekBar,int,boolean):199:199 -> onProgressChanged
-    2:2:void onProgressChanged(android.widget.SeekBar,int,boolean):204:204 -> onProgressChanged
-    3:3:void onProgressChanged(android.widget.SeekBar,int,boolean):207:207 -> onProgressChanged
-    4:4:void onProgressChanged(android.widget.SeekBar,int,boolean):210:210 -> onProgressChanged
-    5:5:void onProgressChanged(android.widget.SeekBar,int,boolean):213:213 -> onProgressChanged
-    6:6:void onProgressChanged(android.widget.SeekBar,int,boolean):216:216 -> onProgressChanged
-    7:7:void onProgressChanged(android.widget.SeekBar,int,boolean):218:218 -> onProgressChanged
-    8:8:void onProgressChanged(android.widget.SeekBar,int,boolean):221:221 -> onProgressChanged
-    9:10:void onProgressChanged(android.widget.SeekBar,int,boolean):225:226 -> onProgressChanged
+    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):191:191 -> <init>
+    1:1:void onProgressChanged(android.widget.SeekBar,int,boolean):196:196 -> onProgressChanged
+    2:2:void onProgressChanged(android.widget.SeekBar,int,boolean):201:201 -> onProgressChanged
+    3:3:void onProgressChanged(android.widget.SeekBar,int,boolean):204:204 -> onProgressChanged
+    4:4:void onProgressChanged(android.widget.SeekBar,int,boolean):207:207 -> onProgressChanged
+    5:5:void onProgressChanged(android.widget.SeekBar,int,boolean):210:210 -> onProgressChanged
+    6:6:void onProgressChanged(android.widget.SeekBar,int,boolean):213:213 -> onProgressChanged
+    7:7:void onProgressChanged(android.widget.SeekBar,int,boolean):215:215 -> onProgressChanged
+    8:8:void onProgressChanged(android.widget.SeekBar,int,boolean):218:218 -> onProgressChanged
+    9:10:void onProgressChanged(android.widget.SeekBar,int,boolean):222:223 -> onProgressChanged
 com.jonasjuffinger.timelapse.SettingsActivity$5 -> com.jonasjuffinger.timelapse.SettingsActivity$f:
     com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):234:234 -> <init>
-    1:1:void onProgressChanged(android.widget.SeekBar,int,boolean):240:240 -> onProgressChanged
-    2:3:void onProgressChanged(android.widget.SeekBar,int,boolean):243:244 -> onProgressChanged
-    4:5:void onProgressChanged(android.widget.SeekBar,int,boolean):249:250 -> onProgressChanged
-    6:7:void onProgressChanged(android.widget.SeekBar,int,boolean):254:255 -> onProgressChanged
-    8:9:void onProgressChanged(android.widget.SeekBar,int,boolean):258:259 -> onProgressChanged
-    10:10:void onProgressChanged(android.widget.SeekBar,int,boolean):261:261 -> onProgressChanged
+    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):231:231 -> <init>
+    1:1:void onProgressChanged(android.widget.SeekBar,int,boolean):237:237 -> onProgressChanged
+    2:3:void onProgressChanged(android.widget.SeekBar,int,boolean):240:241 -> onProgressChanged
+    4:5:void onProgressChanged(android.widget.SeekBar,int,boolean):246:247 -> onProgressChanged
+    6:7:void onProgressChanged(android.widget.SeekBar,int,boolean):251:252 -> onProgressChanged
+    8:9:void onProgressChanged(android.widget.SeekBar,int,boolean):255:256 -> onProgressChanged
+    10:10:void onProgressChanged(android.widget.SeekBar,int,boolean):258:258 -> onProgressChanged
 com.jonasjuffinger.timelapse.SettingsActivity$6 -> com.jonasjuffinger.timelapse.SettingsActivity$g:
     com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):271:271 -> <init>
-    1:4:void onItemSelected(android.widget.AdapterView,android.view.View,int,long):274:277 -> onItemSelected
+    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):268:268 -> <init>
+    1:4:void onItemSelected(android.widget.AdapterView,android.view.View,int,long):271:274 -> onItemSelected
 com.jonasjuffinger.timelapse.SettingsActivity$7 -> com.jonasjuffinger.timelapse.SettingsActivity$h:
     com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):284:284 -> <init>
-    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):287:287 -> onCheckedChanged
+    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):281:281 -> <init>
+    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):284:284 -> onCheckedChanged
 com.jonasjuffinger.timelapse.SettingsActivity$8 -> com.jonasjuffinger.timelapse.SettingsActivity$i:
     com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):291:291 -> <init>
-    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):294:294 -> onCheckedChanged
+    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):288:288 -> <init>
+    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):291:291 -> onCheckedChanged
 com.jonasjuffinger.timelapse.SettingsActivity$9 -> com.jonasjuffinger.timelapse.SettingsActivity$j:
     com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):305:305 -> <init>
-    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):308:308 -> onCheckedChanged
+    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):302:302 -> <init>
+    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):305:305 -> onCheckedChanged
 com.jonasjuffinger.timelapse.ShootActivity -> com.jonasjuffinger.timelapse.ShootActivity:
     boolean stopPicturePreview -> k
     com.jonasjuffinger.timelapse.Display display -> l
@@ -328,26 +327,26 @@ com.jonasjuffinger.timelapse.ShootActivity -> com.jonasjuffinger.timelapse.Shoot
     java.lang.Runnable shootRunnable -> n
     1:1:void <init>():23:23 -> <init>
     2:3:void <init>():50:51 -> <init>
-    4:5:void <init>():235:236 -> <init>
-    1:2:java.lang.String getBatteryPercentage():267:268 -> J
-    3:4:java.lang.String getBatteryPercentage():270:271 -> J
-    5:6:java.lang.String getBatteryPercentage():273:274 -> J
-    7:7:java.lang.String getBatteryPercentage():284:284 -> J
-    1:1:java.lang.String getRemainingTime():288:288 -> K
-    1:1:void shoot():248:248 -> L
-    2:3:void shoot():250:251 -> L
-    4:4:void shoot():253:253 -> L
-    5:5:void shoot():255:255 -> L
+    4:5:void <init>():234:235 -> <init>
+    1:2:java.lang.String getBatteryPercentage():266:267 -> J
+    3:4:java.lang.String getBatteryPercentage():269:270 -> J
+    5:6:java.lang.String getBatteryPercentage():272:273 -> J
+    7:7:java.lang.String getBatteryPercentage():283:283 -> J
+    1:1:java.lang.String getRemainingTime():287:287 -> K
+    1:1:void shoot():247:247 -> L
+    2:3:void shoot():249:250 -> L
+    4:4:void shoot():252:252 -> L
+    5:5:void shoot():254:254 -> L
     1:1:boolean access$000(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> a
     2:2:boolean access$002(com.jonasjuffinger.timelapse.ShootActivity,boolean):23:23 -> a
     1:1:android.hardware.Camera access$100(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> b
-    2:2:void setColorDepth(boolean):306:306 -> b
-    3:3:void log(java.lang.String):311:311 -> b
+    2:2:void setColorDepth(boolean):305:305 -> b
+    3:3:void log(java.lang.String):310:310 -> b
     1:1:android.widget.TextView access$1000(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> c
     1:1:java.lang.String access$1100(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> d
     1:1:android.widget.TextView access$1200(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> e
     1:1:java.lang.String access$1300(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> f
-    2:2:void onAnyKeyDown():293:293 -> f
+    2:2:void onAnyKeyDown():292:292 -> f
     1:1:android.widget.TextView access$1400(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> g
     1:1:android.view.SurfaceView access$200(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> h
     1:1:com.jonasjuffinger.timelapse.Settings access$300(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> i
@@ -363,17 +362,17 @@ com.jonasjuffinger.timelapse.ShootActivity -> com.jonasjuffinger.timelapse.Shoot
     6:6:void onCreate(android.os.Bundle):98:98 -> onCreate
     7:10:void onCreate(android.os.Bundle):102:105 -> onCreate
     11:14:void onCreate(android.os.Bundle):107:110 -> onCreate
-    1:2:void onPause():189:190 -> onPause
-    3:3:void onPause():192:192 -> onPause
-    4:4:void onPause():194:194 -> onPause
-    5:6:void onPause():196:197 -> onPause
-    7:8:void onPause():199:200 -> onPause
-    9:9:void onPause():202:202 -> onPause
-    10:11:void onPause():207:208 -> onPause
-    12:13:void onPause():210:211 -> onPause
-    14:15:void onPause():214:215 -> onPause
-    16:18:void onPause():217:219 -> onPause
-    19:19:void onPause():222:222 -> onPause
+    1:2:void onPause():188:189 -> onPause
+    3:3:void onPause():191:191 -> onPause
+    4:4:void onPause():193:193 -> onPause
+    5:6:void onPause():195:196 -> onPause
+    7:8:void onPause():198:199 -> onPause
+    9:9:void onPause():201:201 -> onPause
+    10:11:void onPause():206:207 -> onPause
+    12:13:void onPause():209:210 -> onPause
+    14:15:void onPause():213:214 -> onPause
+    16:18:void onPause():216:218 -> onPause
+    19:19:void onPause():221:221 -> onPause
     1:1:void onResume():116:116 -> onResume
     2:4:void onResume():118:120 -> onResume
     5:5:void onResume():125:125 -> onResume
@@ -384,13 +383,13 @@ com.jonasjuffinger.timelapse.ShootActivity -> com.jonasjuffinger.timelapse.Shoot
     11:11:void onResume():143:143 -> onResume
     12:13:void onResume():150:151 -> onResume
     14:14:void onResume():158:158 -> onResume
-    15:17:void onResume():164:166 -> onResume
-    18:18:void onResume():168:168 -> onResume
-    19:20:void onResume():170:171 -> onResume
-    21:21:void onResume():174:174 -> onResume
-    22:24:void onResume():176:178 -> onResume
-    1:2:void surfaceCreated(android.view.SurfaceHolder):229:230 -> surfaceCreated
-    1:1:boolean onMenuKeyUp():183:183 -> y
+    15:16:void onResume():164:165 -> onResume
+    17:17:void onResume():167:167 -> onResume
+    18:19:void onResume():169:170 -> onResume
+    20:20:void onResume():173:173 -> onResume
+    21:23:void onResume():175:177 -> onResume
+    1:2:void surfaceCreated(android.view.SurfaceHolder):228:229 -> surfaceCreated
+    1:1:boolean onMenuKeyUp():182:182 -> y
 com.jonasjuffinger.timelapse.ShootActivity$1 -> com.jonasjuffinger.timelapse.ShootActivity$a:
     com.jonasjuffinger.timelapse.ShootActivity this$0 -> a
     1:1:void <init>(com.jonasjuffinger.timelapse.ShootActivity):52:52 -> <init>
@@ -403,9 +402,9 @@ com.jonasjuffinger.timelapse.ShootActivity$1$1 -> com.jonasjuffinger.timelapse.S
     1:1:void run():80:80 -> run
 com.jonasjuffinger.timelapse.ShootActivity$2 -> com.jonasjuffinger.timelapse.ShootActivity$b:
     com.jonasjuffinger.timelapse.ShootActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.ShootActivity):236:236 -> <init>
-    1:4:void run():239:242 -> run
+    1:1:void <init>(com.jonasjuffinger.timelapse.ShootActivity):235:235 -> <init>
+    1:4:void run():238:241 -> run
 com.jonasjuffinger.timelapse.ShootActivity$3 -> com.jonasjuffinger.timelapse.ShootActivity$c:
     com.jonasjuffinger.timelapse.ShootActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.ShootActivity):255:255 -> <init>
-    1:3:void run():258:260 -> run
+    1:1:void <init>(com.jonasjuffinger.timelapse.ShootActivity):254:254 -> <init>
+    1:3:void run():257:259 -> run

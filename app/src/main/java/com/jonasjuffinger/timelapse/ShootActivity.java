@@ -162,8 +162,7 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
 
 
         shotCount = 0;
-        shootRunnableHandler.postDelayed(shootRunnable, (long) settings.delay * 1000 * 60);
-        shootStartTime = System.currentTimeMillis() + settings.delay * 1000 * 60;
+        shootRunnableHandler.postDelayed(shootRunnable, (long) settings.delay * 1000);
 
         display = new Display(getDisplayManager());
 

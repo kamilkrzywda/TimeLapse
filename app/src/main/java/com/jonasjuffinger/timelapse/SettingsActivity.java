@@ -167,21 +167,18 @@ public class SettingsActivity extends BaseActivity
 
             if( i<=60 ){
                 settings.interval = i;
-                intervalTextValue = Double.toString(settings.interval);
+                intervalTextValue = Integer.toString((int) settings.interval);
                 intervalUnit = "s";
             }else{
                 settings.interval = (i - 60) * (i - 60) + 60;
-                intervalTextValue = Double.toString(settings.interval);
+                intervalTextValue = Integer.toString((int) settings.interval);
                 intervalUnit = "s";
             }
 
             tvIntervalValue.setText(intervalTextValue);
             tvIntervalUnit.setText(intervalUnit);
 
-            if(settings.interval == 0)
-                lblShots.setText("Dur. (s)");
-            else
-                lblShots.setText("Shots");
+            lblShots.setText("Shots");
 
             updateTimes();
         }
