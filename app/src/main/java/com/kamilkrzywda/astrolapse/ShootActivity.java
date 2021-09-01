@@ -66,6 +66,7 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
                 cameraEx.getNormalCamera().stopPreview();
                 camera.stopPreview();
                 stopPicturePreview = true;
+                takingPicture = false;
                 shootRunnableHandler.postDelayed(shootRunnable, 700);
             } else if(shotCount < settings.shotCount) {
                 shoot();
