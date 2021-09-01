@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 1.5.64
 # min_api: 10
-# pg_map_id: 01e2a16
+# pg_map_id: c452eb9
 com.github.ma1co.pmcademo.app.AppNotificationManager -> fb.a:
     com.github.ma1co.pmcademo.app.AppNotificationManager instance -> b
     java.util.ArrayList listeners -> a
@@ -115,17 +115,17 @@ com.github.ma1co.pmcademo.app.BaseActivity$1 -> fb.b$a:
     com.github.ma1co.pmcademo.app.BaseActivity this$0 -> a
     1:1:void <init>(com.github.ma1co.pmcademo.app.BaseActivity):27:27 -> <init>
     1:1:void onDeviceStatusChanged(int):31:31 -> onDeviceStatusChanged
-com.jonasjuffinger.timelapse.AdvancedSeekBar -> com.jonasjuffinger.timelapse.AdvancedSeekBar:
+com.kamilkrzywda.astrolapse.AdvancedSeekBar -> com.kamilkrzywda.astrolapse.AdvancedSeekBar:
     1:1:void <init>(android.content.Context):13:13 -> <init>
     2:2:void <init>(android.content.Context,android.util.AttributeSet):17:17 -> <init>
     3:3:void <init>(android.content.Context,android.util.AttributeSet,int):21:21 -> <init>
     1:1:void dialChanged(int):25:25 -> a
     2:2:void dialChanged(int):28:28 -> a
-com.jonasjuffinger.timelapse.CustomExceptionHandler -> fb.c:
+com.kamilkrzywda.astrolapse.CustomExceptionHandler -> fb.c:
     java.lang.Thread$UncaughtExceptionHandler defaultUEH -> a
     1:2:void <init>():12:13 -> <init>
     1:7:void uncaughtException(java.lang.Thread,java.lang.Throwable):17:23 -> uncaughtException
-com.jonasjuffinger.timelapse.Display -> fb.d:
+com.kamilkrzywda.astrolapse.Display -> fb.d:
     java.lang.Runnable turnOffRunnable -> c
     android.os.Handler turnOffRunnableHandler -> b
     com.sony.scalar.hardware.avio.DisplayManager displayManager -> a
@@ -137,17 +137,17 @@ com.jonasjuffinger.timelapse.Display -> fb.d:
     3:4:void off():47:48 -> a
     5:7:void off():50:52 -> a
     1:2:void on():57:58 -> b
-com.jonasjuffinger.timelapse.Display$1 -> fb.d$a:
-    com.jonasjuffinger.timelapse.Display this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.Display):23:23 -> <init>
+com.kamilkrzywda.astrolapse.Display$1 -> fb.d$a:
+    com.kamilkrzywda.astrolapse.Display this$0 -> a
+    1:1:void <init>(com.kamilkrzywda.astrolapse.Display):23:23 -> <init>
     1:1:void run():26:26 -> run
-com.jonasjuffinger.timelapse.Logger -> fb.e:
+com.kamilkrzywda.astrolapse.Logger -> fb.e:
     1:1:java.io.File getFile():13:13 -> a
     2:2:void log(java.lang.String,java.lang.String):25:25 -> a
     3:3:void error(java.lang.String):28:28 -> a
     1:1:void info(java.lang.String):27:27 -> b
     1:5:void log(java.lang.String):18:22 -> c
-com.jonasjuffinger.timelapse.Settings -> fb.f:
+com.kamilkrzywda.astrolapse.Settings -> fb.f:
     boolean ael -> i
     int fps -> j
     boolean brs -> k
@@ -164,22 +164,22 @@ com.jonasjuffinger.timelapse.Settings -> fb.f:
     14:22:void <init>(double,int,int,boolean,boolean,boolean,boolean,boolean):51:59 -> <init>
     1:8:void putInIntent(android.content.Intent):63:70 -> a
     9:18:void load(android.content.Context):104:113 -> a
-    1:9:com.jonasjuffinger.timelapse.Settings getFromIntent(android.content.Intent):74:82 -> b
+    1:9:com.kamilkrzywda.astrolapse.Settings getFromIntent(android.content.Intent):74:82 -> b
     10:21:void save(android.content.Context):88:99 -> b
-com.jonasjuffinger.timelapse.SettingsActivity -> com.jonasjuffinger.timelapse.SettingsActivity:
+com.kamilkrzywda.astrolapse.SettingsActivity -> com.kamilkrzywda.astrolapse.SettingsActivity:
     android.view.View$OnClickListener bnCloseOnClickListener -> z
     android.widget.TextView tvVideoTimeValue -> n
     android.widget.CheckBox cbAEL -> v
     android.widget.SeekBar$OnSeekBarChangeListener sbShotsOnSeekBarChangeListener -> B
     android.widget.TextView tvDelayUnit -> r
     android.widget.CheckBox cbDOFF -> x
+    com.kamilkrzywda.astrolapse.AdvancedSeekBar sbInterval -> f
+    com.kamilkrzywda.astrolapse.AdvancedSeekBar sbShots -> i
     android.widget.CompoundButton$OnCheckedChangeListener cbMFOnCheckListener -> G
+    com.kamilkrzywda.astrolapse.Settings settings -> c
     android.widget.CompoundButton$OnCheckedChangeListener cbSilentShutterOnCheckListener -> E
-    com.jonasjuffinger.timelapse.Settings settings -> c
-    com.jonasjuffinger.timelapse.SettingsActivity that -> b
     android.widget.TextView tvIntervalUnit -> h
     android.widget.Button bnClose -> e
-    com.jonasjuffinger.timelapse.AdvancedSeekBar sbShots -> i
     android.widget.TextView tvShotsValue -> j
     int fps -> s
     android.widget.TextView tvDurationValue -> l
@@ -190,12 +190,12 @@ com.jonasjuffinger.timelapse.SettingsActivity -> com.jonasjuffinger.timelapse.Se
     android.widget.CheckBox cbSilentShutter -> u
     android.widget.SeekBar$OnSeekBarChangeListener sbIntervalOnSeekBarChangeListener -> A
     android.widget.CheckBox cbMF -> w
-    com.jonasjuffinger.timelapse.AdvancedSeekBar sbDelay -> p
     android.widget.CompoundButton$OnCheckedChangeListener cbDOFFOnCheckListener -> H
     android.widget.CompoundButton$OnCheckedChangeListener cbAELOnCheckListener -> F
     android.widget.TextView tvIntervalValue -> g
-    com.jonasjuffinger.timelapse.AdvancedSeekBar sbInterval -> f
+    com.kamilkrzywda.astrolapse.AdvancedSeekBar sbDelay -> p
     android.widget.AdapterView$OnItemSelectedListener spnFpsOnItemSelectedListener -> D
+    com.kamilkrzywda.astrolapse.SettingsActivity that -> b
     android.widget.Spinner spnFps -> t
     android.widget.TextView lblShots -> k
     android.widget.Button bnStart -> d
@@ -218,19 +218,19 @@ com.jonasjuffinger.timelapse.SettingsActivity -> com.jonasjuffinger.timelapse.Se
     13:14:void updateTimes():347:348 -> J
     15:16:void updateTimes():351:352 -> J
     17:18:void updateTimes():355:356 -> J
-    1:1:com.jonasjuffinger.timelapse.SettingsActivity access$000(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> a
-    2:2:int access$802(com.jonasjuffinger.timelapse.SettingsActivity,int):20:20 -> a
-    1:1:com.jonasjuffinger.timelapse.Settings access$100(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> b
+    1:1:com.kamilkrzywda.astrolapse.SettingsActivity access$000(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> a
+    2:2:int access$802(com.kamilkrzywda.astrolapse.SettingsActivity,int):20:20 -> a
+    1:1:com.kamilkrzywda.astrolapse.Settings access$100(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> b
     2:4:boolean onKuruDialChanged(int):382:384 -> b
-    1:1:android.widget.TextView access$200(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> c
+    1:1:android.widget.TextView access$200(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> c
     2:4:boolean onLowerDialChanged(int):368:370 -> c
-    1:1:android.widget.TextView access$300(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> d
-    1:1:android.widget.TextView access$400(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> e
+    1:1:android.widget.TextView access$300(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> d
+    1:1:android.widget.TextView access$400(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> e
     2:4:boolean onThirdDialChanged(int):375:377 -> e
-    1:1:android.widget.TextView access$500(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> f
+    1:1:android.widget.TextView access$500(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> f
     2:4:boolean onUpperDialChanged(int):361:363 -> f
-    1:1:android.widget.TextView access$600(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> g
-    1:1:android.widget.TextView access$700(com.jonasjuffinger.timelapse.SettingsActivity):20:20 -> h
+    1:1:android.widget.TextView access$600(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> g
+    1:1:android.widget.TextView access$700(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> h
     1:2:void onCreate(android.os.Bundle):55:56 -> onCreate
     3:4:void onCreate(android.os.Bundle):58:59 -> onCreate
     5:5:void onCreate(android.os.Bundle):61:61 -> onCreate
@@ -251,30 +251,30 @@ com.jonasjuffinger.timelapse.SettingsActivity -> com.jonasjuffinger.timelapse.Se
     49:50:void onCreate(android.os.Bundle):124:125 -> onCreate
     51:52:void onCreate(android.os.Bundle):127:128 -> onCreate
     1:1:boolean onMenuKeyUp():391:391 -> y
-com.jonasjuffinger.timelapse.SettingsActivity$1 -> com.jonasjuffinger.timelapse.SettingsActivity$b:
-    com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):140:140 -> <init>
+com.kamilkrzywda.astrolapse.SettingsActivity$1 -> com.kamilkrzywda.astrolapse.SettingsActivity$b:
+    com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):140:140 -> <init>
     1:4:void onClick(android.view.View):143:146 -> onClick
-com.jonasjuffinger.timelapse.SettingsActivity$10 -> com.jonasjuffinger.timelapse.SettingsActivity$a:
-    com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):309:309 -> <init>
+com.kamilkrzywda.astrolapse.SettingsActivity$10 -> com.kamilkrzywda.astrolapse.SettingsActivity$a:
+    com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):309:309 -> <init>
     1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):312:312 -> onCheckedChanged
-com.jonasjuffinger.timelapse.SettingsActivity$2 -> com.jonasjuffinger.timelapse.SettingsActivity$c:
-    com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):149:149 -> <init>
+com.kamilkrzywda.astrolapse.SettingsActivity$2 -> com.kamilkrzywda.astrolapse.SettingsActivity$c:
+    com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):149:149 -> <init>
     1:2:void onClick(android.view.View):152:153 -> onClick
-com.jonasjuffinger.timelapse.SettingsActivity$3 -> com.jonasjuffinger.timelapse.SettingsActivity$d:
-    com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):158:158 -> <init>
+com.kamilkrzywda.astrolapse.SettingsActivity$3 -> com.kamilkrzywda.astrolapse.SettingsActivity$d:
+    com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):158:158 -> <init>
     1:1:void onProgressChanged(android.widget.SeekBar,int,boolean):164:164 -> onProgressChanged
     2:3:void onProgressChanged(android.widget.SeekBar,int,boolean):169:170 -> onProgressChanged
     4:5:void onProgressChanged(android.widget.SeekBar,int,boolean):173:174 -> onProgressChanged
     6:7:void onProgressChanged(android.widget.SeekBar,int,boolean):178:179 -> onProgressChanged
     8:8:void onProgressChanged(android.widget.SeekBar,int,boolean):181:181 -> onProgressChanged
     9:9:void onProgressChanged(android.widget.SeekBar,int,boolean):183:183 -> onProgressChanged
-com.jonasjuffinger.timelapse.SettingsActivity$4 -> com.jonasjuffinger.timelapse.SettingsActivity$e:
-    com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):191:191 -> <init>
+com.kamilkrzywda.astrolapse.SettingsActivity$4 -> com.kamilkrzywda.astrolapse.SettingsActivity$e:
+    com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):191:191 -> <init>
     1:1:void onProgressChanged(android.widget.SeekBar,int,boolean):196:196 -> onProgressChanged
     2:2:void onProgressChanged(android.widget.SeekBar,int,boolean):201:201 -> onProgressChanged
     3:3:void onProgressChanged(android.widget.SeekBar,int,boolean):204:204 -> onProgressChanged
@@ -284,127 +284,124 @@ com.jonasjuffinger.timelapse.SettingsActivity$4 -> com.jonasjuffinger.timelapse.
     7:7:void onProgressChanged(android.widget.SeekBar,int,boolean):215:215 -> onProgressChanged
     8:8:void onProgressChanged(android.widget.SeekBar,int,boolean):218:218 -> onProgressChanged
     9:10:void onProgressChanged(android.widget.SeekBar,int,boolean):222:223 -> onProgressChanged
-com.jonasjuffinger.timelapse.SettingsActivity$5 -> com.jonasjuffinger.timelapse.SettingsActivity$f:
-    com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):231:231 -> <init>
+com.kamilkrzywda.astrolapse.SettingsActivity$5 -> com.kamilkrzywda.astrolapse.SettingsActivity$f:
+    com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):231:231 -> <init>
     1:1:void onProgressChanged(android.widget.SeekBar,int,boolean):237:237 -> onProgressChanged
     2:3:void onProgressChanged(android.widget.SeekBar,int,boolean):240:241 -> onProgressChanged
     4:5:void onProgressChanged(android.widget.SeekBar,int,boolean):246:247 -> onProgressChanged
     6:7:void onProgressChanged(android.widget.SeekBar,int,boolean):251:252 -> onProgressChanged
     8:9:void onProgressChanged(android.widget.SeekBar,int,boolean):255:256 -> onProgressChanged
     10:10:void onProgressChanged(android.widget.SeekBar,int,boolean):258:258 -> onProgressChanged
-com.jonasjuffinger.timelapse.SettingsActivity$6 -> com.jonasjuffinger.timelapse.SettingsActivity$g:
-    com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):268:268 -> <init>
+com.kamilkrzywda.astrolapse.SettingsActivity$6 -> com.kamilkrzywda.astrolapse.SettingsActivity$g:
+    com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):268:268 -> <init>
     1:4:void onItemSelected(android.widget.AdapterView,android.view.View,int,long):271:274 -> onItemSelected
-com.jonasjuffinger.timelapse.SettingsActivity$7 -> com.jonasjuffinger.timelapse.SettingsActivity$h:
-    com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):281:281 -> <init>
+com.kamilkrzywda.astrolapse.SettingsActivity$7 -> com.kamilkrzywda.astrolapse.SettingsActivity$h:
+    com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):281:281 -> <init>
     1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):284:284 -> onCheckedChanged
-com.jonasjuffinger.timelapse.SettingsActivity$8 -> com.jonasjuffinger.timelapse.SettingsActivity$i:
-    com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):288:288 -> <init>
+com.kamilkrzywda.astrolapse.SettingsActivity$8 -> com.kamilkrzywda.astrolapse.SettingsActivity$i:
+    com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):288:288 -> <init>
     1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):291:291 -> onCheckedChanged
-com.jonasjuffinger.timelapse.SettingsActivity$9 -> com.jonasjuffinger.timelapse.SettingsActivity$j:
-    com.jonasjuffinger.timelapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.SettingsActivity):302:302 -> <init>
+com.kamilkrzywda.astrolapse.SettingsActivity$9 -> com.kamilkrzywda.astrolapse.SettingsActivity$j:
+    com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):302:302 -> <init>
     1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):305:305 -> onCheckedChanged
-com.jonasjuffinger.timelapse.ShootActivity -> com.jonasjuffinger.timelapse.ShootActivity:
+com.kamilkrzywda.astrolapse.ShootActivity -> com.kamilkrzywda.astrolapse.ShootActivity:
     boolean stopPicturePreview -> k
-    com.jonasjuffinger.timelapse.Display display -> l
+    boolean takingPicture -> l
     int shotCount -> c
     android.view.SurfaceView reviewSurfaceView -> g
     com.sony.scalar.hardware.CameraEx cameraEx -> i
+    com.kamilkrzywda.astrolapse.Display display -> m
+    com.kamilkrzywda.astrolapse.Settings settings -> b
     android.hardware.Camera camera -> j
     android.view.SurfaceHolder cameraSurfaceHolder -> h
     android.widget.TextView tvBattery -> e
     android.widget.TextView tvCount -> d
-    com.jonasjuffinger.timelapse.Settings settings -> b
-    android.os.Handler cancelTakiePictureHandler -> o
     android.widget.TextView tvRemaining -> f
-    android.os.Handler shootRunnableHandler -> m
-    java.lang.Runnable cancelTakePictureRunnable -> p
-    java.lang.Runnable shootRunnable -> n
+    android.os.Handler shootRunnableHandler -> n
+    java.lang.Runnable shootRunnable -> o
     1:1:void <init>():23:23 -> <init>
     2:3:void <init>():50:51 -> <init>
-    4:5:void <init>():235:236 -> <init>
-    1:2:java.lang.String getBatteryPercentage():267:268 -> J
-    3:4:java.lang.String getBatteryPercentage():270:271 -> J
-    5:6:java.lang.String getBatteryPercentage():273:274 -> J
-    7:7:java.lang.String getBatteryPercentage():284:284 -> J
-    1:1:java.lang.String getRemainingTime():288:288 -> K
-    1:1:void shoot():248:248 -> L
-    2:3:void shoot():250:251 -> L
-    4:4:void shoot():253:253 -> L
-    5:5:void shoot():255:255 -> L
-    1:1:boolean access$000(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> a
-    2:2:boolean access$002(com.jonasjuffinger.timelapse.ShootActivity,boolean):23:23 -> a
-    1:1:android.hardware.Camera access$100(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> b
-    2:2:void setColorDepth(boolean):306:306 -> b
-    3:3:void log(java.lang.String):311:311 -> b
-    1:1:android.widget.TextView access$1000(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> c
-    1:1:java.lang.String access$1100(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> d
-    1:1:android.widget.TextView access$1200(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> e
-    1:1:java.lang.String access$1300(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> f
-    2:2:void onAnyKeyDown():293:293 -> f
-    1:1:android.widget.TextView access$1400(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> g
-    1:1:android.view.SurfaceView access$200(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> h
-    1:1:com.jonasjuffinger.timelapse.Settings access$300(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> i
-    1:1:com.jonasjuffinger.timelapse.Display access$400(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> j
-    1:1:int access$500(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> k
-    1:1:void access$600(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> l
-    1:1:com.sony.scalar.hardware.CameraEx access$700(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> m
-    1:1:java.lang.Runnable access$800(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> n
-    1:1:android.os.Handler access$900(com.jonasjuffinger.timelapse.ShootActivity):23:23 -> o
-    1:1:void onCreate(android.os.Bundle):90:90 -> onCreate
-    2:3:void onCreate(android.os.Bundle):92:93 -> onCreate
-    4:5:void onCreate(android.os.Bundle):95:96 -> onCreate
-    6:6:void onCreate(android.os.Bundle):98:98 -> onCreate
-    7:10:void onCreate(android.os.Bundle):102:105 -> onCreate
-    11:14:void onCreate(android.os.Bundle):107:110 -> onCreate
-    1:2:void onPause():188:189 -> onPause
-    3:3:void onPause():191:191 -> onPause
-    4:4:void onPause():193:193 -> onPause
-    5:7:void onPause():195:197 -> onPause
-    8:9:void onPause():199:200 -> onPause
-    10:10:void onPause():202:202 -> onPause
-    11:12:void onPause():207:208 -> onPause
-    13:14:void onPause():210:211 -> onPause
-    15:16:void onPause():214:215 -> onPause
-    17:19:void onPause():217:219 -> onPause
-    20:20:void onPause():222:222 -> onPause
-    1:1:void onResume():116:116 -> onResume
-    2:4:void onResume():118:120 -> onResume
-    5:5:void onResume():125:125 -> onResume
-    6:7:void onResume():128:129 -> onResume
-    8:8:void onResume():131:131 -> onResume
-    9:9:void onResume():137:137 -> onResume
-    10:10:void onResume():139:139 -> onResume
-    11:11:void onResume():143:143 -> onResume
-    12:13:void onResume():150:151 -> onResume
-    14:14:void onResume():158:158 -> onResume
-    15:16:void onResume():164:165 -> onResume
-    17:17:void onResume():167:167 -> onResume
-    18:19:void onResume():169:170 -> onResume
-    20:20:void onResume():173:173 -> onResume
-    21:23:void onResume():175:177 -> onResume
-    1:2:void surfaceCreated(android.view.SurfaceHolder):229:230 -> surfaceCreated
-    1:1:boolean onMenuKeyUp():182:182 -> y
-com.jonasjuffinger.timelapse.ShootActivity$1 -> com.jonasjuffinger.timelapse.ShootActivity$a:
-    com.jonasjuffinger.timelapse.ShootActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.ShootActivity):52:52 -> <init>
+    1:2:java.lang.String getBatteryPercentage():268:269 -> J
+    3:4:java.lang.String getBatteryPercentage():271:272 -> J
+    5:6:java.lang.String getBatteryPercentage():274:275 -> J
+    7:7:java.lang.String getBatteryPercentage():285:285 -> J
+    1:1:java.lang.String getRemainingTime():289:289 -> K
+    1:1:void shoot():247:247 -> L
+    2:2:void shoot():249:249 -> L
+    3:4:void shoot():251:252 -> L
+    5:5:void shoot():254:254 -> L
+    6:6:void shoot():256:256 -> L
+    1:1:boolean access$000(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> a
+    2:2:boolean access$002(com.kamilkrzywda.astrolapse.ShootActivity,boolean):23:23 -> a
+    1:1:android.hardware.Camera access$100(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> b
+    2:2:void setColorDepth(boolean):307:307 -> b
+    3:3:void log(java.lang.String):312:312 -> b
+    1:1:void access$1000(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> c
+    1:1:android.widget.TextView access$1100(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> d
+    1:1:java.lang.String access$1200(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> e
+    1:1:android.widget.TextView access$1300(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> f
+    2:2:void onAnyKeyDown():294:294 -> f
+    1:1:java.lang.String access$1400(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> g
+    1:1:android.widget.TextView access$1500(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> h
+    1:1:android.view.SurfaceView access$200(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> i
+    1:1:com.kamilkrzywda.astrolapse.Settings access$300(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> j
+    1:1:com.kamilkrzywda.astrolapse.Display access$400(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> k
+    1:1:boolean access$500(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> l
+    1:1:com.sony.scalar.hardware.CameraEx access$600(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> m
+    1:1:java.lang.Runnable access$700(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> n
+    1:1:android.os.Handler access$800(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> o
+    1:1:void onCreate(android.os.Bundle):95:95 -> onCreate
+    2:3:void onCreate(android.os.Bundle):97:98 -> onCreate
+    4:5:void onCreate(android.os.Bundle):100:101 -> onCreate
+    6:7:void onCreate(android.os.Bundle):103:104 -> onCreate
+    8:11:void onCreate(android.os.Bundle):107:110 -> onCreate
+    12:15:void onCreate(android.os.Bundle):112:115 -> onCreate
+    1:2:void onPause():200:201 -> onPause
+    3:3:void onPause():203:203 -> onPause
+    4:4:void onPause():205:205 -> onPause
+    5:6:void onPause():207:208 -> onPause
+    7:8:void onPause():210:211 -> onPause
+    9:9:void onPause():213:213 -> onPause
+    10:11:void onPause():218:219 -> onPause
+    12:13:void onPause():221:222 -> onPause
+    14:15:void onPause():225:226 -> onPause
+    16:18:void onPause():228:230 -> onPause
+    19:19:void onPause():233:233 -> onPause
+    1:1:void onResume():121:121 -> onResume
+    2:4:void onResume():123:125 -> onResume
+    5:5:void onResume():130:130 -> onResume
+    6:7:void onResume():133:134 -> onResume
+    8:8:void onResume():136:136 -> onResume
+    9:9:void onResume():142:142 -> onResume
+    10:10:void onResume():144:144 -> onResume
+    11:11:void onResume():148:148 -> onResume
+    12:12:void onResume():155:155 -> onResume
+    13:14:void onResume():162:163 -> onResume
+    15:15:void onResume():170:170 -> onResume
+    16:17:void onResume():176:177 -> onResume
+    18:18:void onResume():179:179 -> onResume
+    19:20:void onResume():181:182 -> onResume
+    21:21:void onResume():185:185 -> onResume
+    22:24:void onResume():187:189 -> onResume
+    1:1:int access$900(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> p
+    1:2:void surfaceCreated(android.view.SurfaceHolder):240:241 -> surfaceCreated
+    1:1:boolean onMenuKeyUp():194:194 -> y
+com.kamilkrzywda.astrolapse.ShootActivity$1 -> com.kamilkrzywda.astrolapse.ShootActivity$a:
+    com.kamilkrzywda.astrolapse.ShootActivity this$0 -> a
+    1:1:void <init>(com.kamilkrzywda.astrolapse.ShootActivity):52:52 -> <init>
     1:6:void run():56:61 -> run
-    7:9:void run():64:66 -> run
-    10:11:void run():69:70 -> run
-com.jonasjuffinger.timelapse.ShootActivity$1$1 -> com.jonasjuffinger.timelapse.ShootActivity$a$a:
-    com.jonasjuffinger.timelapse.ShootActivity$1 this$1 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.ShootActivity$1):70:70 -> <init>
-    1:1:void run():80:80 -> run
-com.jonasjuffinger.timelapse.ShootActivity$2 -> com.jonasjuffinger.timelapse.ShootActivity$b:
-    com.jonasjuffinger.timelapse.ShootActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.ShootActivity):236:236 -> <init>
-    1:4:void run():239:242 -> run
-com.jonasjuffinger.timelapse.ShootActivity$3 -> com.jonasjuffinger.timelapse.ShootActivity$c:
-    com.jonasjuffinger.timelapse.ShootActivity this$0 -> a
-    1:1:void <init>(com.jonasjuffinger.timelapse.ShootActivity):255:255 -> <init>
-    1:3:void run():258:260 -> run
+    7:15:void run():64:72 -> run
+    16:17:void run():74:75 -> run
+com.kamilkrzywda.astrolapse.ShootActivity$1$1 -> com.kamilkrzywda.astrolapse.ShootActivity$a$a:
+    com.kamilkrzywda.astrolapse.ShootActivity$1 this$1 -> a
+    1:1:void <init>(com.kamilkrzywda.astrolapse.ShootActivity$1):75:75 -> <init>
+    1:1:void run():85:85 -> run
+com.kamilkrzywda.astrolapse.ShootActivity$2 -> com.kamilkrzywda.astrolapse.ShootActivity$b:
+    com.kamilkrzywda.astrolapse.ShootActivity this$0 -> a
+    1:1:void <init>(com.kamilkrzywda.astrolapse.ShootActivity):256:256 -> <init>
+    1:3:void run():259:261 -> run

@@ -1,4 +1,4 @@
-# TimeLapse
+# AstroLapse
 
 A time lapse app for Sony Alpha cameras using the [OpenMemories: Framework](https://github.com/ma1co/OpenMemories-Framework).
 

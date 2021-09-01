@@ -1,4 +1,4 @@
-package com.jonasjuffinger.timelapse;
+package com.kamilkrzywda.astrolapse;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

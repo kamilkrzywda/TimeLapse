@@ -50,7 +50,7 @@
 
             <view
                 android:id="@+id/sbInterval"
-                class="com.jonasjuffinger.timelapse.AdvancedSeekBar"
+                class="com.kamilkrzywda.astrolapse.AdvancedSeekBar"
                 android:layout_width="240dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -88,7 +88,7 @@
 
             <view
                 android:id="@+id/sbShots"
-                class="com.jonasjuffinger.timelapse.AdvancedSeekBar"
+                class="com.kamilkrzywda.astrolapse.AdvancedSeekBar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
@@ -257,7 +257,7 @@
 
             <view
                 android:id="@+id/sbDelay"
-                class="com.jonasjuffinger.timelapse.AdvancedSeekBar"
+                class="com.kamilkrzywda.astrolapse.AdvancedSeekBar"
                 android:layout_width="240dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"

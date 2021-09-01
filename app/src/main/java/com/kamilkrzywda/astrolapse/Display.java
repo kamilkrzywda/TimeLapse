@@ -1,4 +1,4 @@
-package com.jonasjuffinger.timelapse;
+package com.kamilkrzywda.astrolapse;
 
 import android.os.Handler;
 

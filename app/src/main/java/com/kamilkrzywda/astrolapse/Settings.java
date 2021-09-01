@@ -1,4 +1,4 @@
-package com.jonasjuffinger.timelapse;
+package com.kamilkrzywda.astrolapse;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,14 +13,14 @@ import static android.preference.PreferenceManager.getDefaultSharedPreferences;
  */
 
 class Settings {
-    private static final String EXTRA_INTERVAL = "com.jonasjuffinger.timelapse.INTERVAL";
-    private static final String EXTRA_SHOTCOUNT = "com.jonasjuffinger.timelapse.SHOTCOUNT";
-    private static final String EXTRA_DELAY = "com.jonasjuffinger.timelapse.DELAY";
-    private static final String EXTRA_DISPLAYOFF = "com.jonasjuffinger.timelapse.DISPLAYOFF";
-    private static final String EXTRA_SILENTSHUTTER = "com.jonasjuffinger.timelapse.SILENTSHUTTER";
-    private static final String EXTRA_AEL = "com.jonasjuffinger.timelapse.AEL";
-    private static final String EXTRA_BRS = "com.jonasjuffinger.timelapse.BRS";
-    private static final String EXTRA_MF = "com.jonasjuffinger.timelapse.MF";
+    private static final String EXTRA_INTERVAL = "com.kamilkrzywda.astrolapse.INTERVAL";
+    private static final String EXTRA_SHOTCOUNT = "com.kamilkrzywda.astrolapse.SHOTCOUNT";
+    private static final String EXTRA_DELAY = "com.kamilkrzywda.astrolapse.DELAY";
+    private static final String EXTRA_DISPLAYOFF = "com.kamilkrzywda.astrolapse.DISPLAYOFF";
+    private static final String EXTRA_SILENTSHUTTER = "com.kamilkrzywda.astrolapse.SILENTSHUTTER";
+    private static final String EXTRA_AEL = "com.kamilkrzywda.astrolapse.AEL";
+    private static final String EXTRA_BRS = "com.kamilkrzywda.astrolapse.BRS";
+    private static final String EXTRA_MF = "com.kamilkrzywda.astrolapse.MF";
 
     double interval;
     int delay;

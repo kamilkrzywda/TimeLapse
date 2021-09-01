@@ -1,4 +1,4 @@
-package com.jonasjuffinger.timelapse;
+package com.kamilkrzywda.astrolapse;
 
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -61,11 +61,16 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
                     display.off();
             }
 
-            if(shotCount < settings.shotCount) {
+            if (takingPicture) {
+                cameraEx.cancelTakePicture();
+                cameraEx.getNormalCamera().stopPreview();
+                camera.stopPreview();
+                stopPicturePreview = true;
+                shootRunnableHandler.postDelayed(shootRunnable, 700);
+            } else if(shotCount < settings.shotCount) {
                 shoot();
                 display.on();
-            }
-            else {
+            } else {
                 display.on();
                 runOnUiThread(new Runnable() {
                     @Override
@@ -138,6 +143,13 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
 
         modifier.setDriveMode(CameraEx.ParametersModifier.DRIVE_MODE_SINGLE);
 
+        // Disable long exposure noise reduction (LENR)
+        try {
+            modifier.setLongExposureNR(false);
+        }
+        catch(NoSuchMethodError ignored)
+        {}
+
         // setSilentShutterMode doesn't exist on all cameras
         try {
             modifier.setSilentShutterMode(settings.silentShutter);
@@ -193,7 +205,6 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
         log("on pause");
 
         cameraEx.cancelTakePicture();
-        cancelTakiePictureHandler.removeCallbacks(cancelTakePictureRunnable);
         shootRunnableHandler.removeCallbacks(shootRunnable);
 
         if(cameraSurfaceHolder == null)
@@ -232,25 +243,15 @@ public class ShootActivity extends BaseActivity implements SurfaceHolder.Callbac
         catch (IOException e) {}
     }
 
-    private Handler cancelTakiePictureHandler = new Handler();
-    private final Runnable cancelTakePictureRunnable = new Runnable() {
-        @Override
-        public void run() {
-            cameraEx.cancelTakePicture();
-            cameraEx.getNormalCamera().stopPreview();
-            stopPicturePreview = true;
-            shootRunnableHandler.postDelayed(shootRunnable, 300);
-            //cameraEx.getNormalCamera().takePicture(null, null, null);
-        }
-    };
-
     private void shoot() {
         shootTime = System.currentTimeMillis();
 
         cameraEx.getNormalCamera().takePicture(null, null, null);
-        cancelTakiePictureHandler.postDelayed(cancelTakePictureRunnable, (long) settings.interval * 1000);
 
         shotCount++;
+        takingPicture = true;
+
+        shootRunnableHandler.postDelayed(shootRunnable, (long) settings.interval * 1000);
 
         runOnUiThread(new Runnable() {
             @Override
