@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 1.5.64
 # min_api: 10
-# pg_map_id: 4ae795c
+# pg_map_id: 646c8b6
 com.github.ma1co.pmcademo.app.AppNotificationManager -> fb.a:
     com.github.ma1co.pmcademo.app.AppNotificationManager instance -> b
     java.util.ArrayList listeners -> a
@@ -204,31 +204,31 @@ com.kamilkrzywda.astrolapse.SettingsActivity -> com.kamilkrzywda.astrolapse.Sett
     2:2:void <init>():22:22 -> <init>
     3:3:void <init>():140:140 -> <init>
     4:4:void <init>():157:157 -> <init>
-    5:5:void <init>():267:267 -> <init>
-    6:6:void <init>():281:281 -> <init>
-    7:7:void <init>():288:288 -> <init>
-    8:8:void <init>():302:302 -> <init>
-    9:9:void <init>():309:309 -> <init>
-    1:1:void updateTimes():317:317 -> J
-    2:5:void updateTimes():319:322 -> J
-    6:6:void updateTimes():328:328 -> J
-    7:8:void updateTimes():333:334 -> J
-    9:10:void updateTimes():338:339 -> J
-    11:12:void updateTimes():342:343 -> J
-    13:14:void updateTimes():347:348 -> J
-    15:16:void updateTimes():351:352 -> J
-    17:18:void updateTimes():355:356 -> J
+    5:5:void <init>():273:273 -> <init>
+    6:6:void <init>():287:287 -> <init>
+    7:7:void <init>():294:294 -> <init>
+    8:8:void <init>():308:308 -> <init>
+    9:9:void <init>():315:315 -> <init>
+    1:1:void updateTimes():323:323 -> J
+    2:5:void updateTimes():325:328 -> J
+    6:6:void updateTimes():334:334 -> J
+    7:8:void updateTimes():339:340 -> J
+    9:10:void updateTimes():344:345 -> J
+    11:12:void updateTimes():348:349 -> J
+    13:14:void updateTimes():353:354 -> J
+    15:16:void updateTimes():357:358 -> J
+    17:18:void updateTimes():361:362 -> J
     1:1:com.kamilkrzywda.astrolapse.SettingsActivity access$000(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> a
     2:2:int access$802(com.kamilkrzywda.astrolapse.SettingsActivity,int):20:20 -> a
     1:1:com.kamilkrzywda.astrolapse.Settings access$100(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> b
-    2:4:boolean onKuruDialChanged(int):382:384 -> b
+    2:4:boolean onKuruDialChanged(int):388:390 -> b
     1:1:android.widget.TextView access$200(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> c
-    2:4:boolean onLowerDialChanged(int):368:370 -> c
+    2:4:boolean onLowerDialChanged(int):374:376 -> c
     1:1:android.widget.TextView access$300(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> d
     1:1:android.widget.TextView access$400(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> e
-    2:4:boolean onThirdDialChanged(int):375:377 -> e
+    2:4:boolean onThirdDialChanged(int):381:383 -> e
     1:1:android.widget.TextView access$500(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> f
-    2:4:boolean onUpperDialChanged(int):361:363 -> f
+    2:4:boolean onUpperDialChanged(int):367:369 -> f
     1:1:android.widget.TextView access$600(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> g
     1:1:android.widget.TextView access$700(com.kamilkrzywda.astrolapse.SettingsActivity):20:20 -> h
     1:2:void onCreate(android.os.Bundle):55:56 -> onCreate
@@ -250,15 +250,15 @@ com.kamilkrzywda.astrolapse.SettingsActivity -> com.kamilkrzywda.astrolapse.Sett
     47:48:void onCreate(android.os.Bundle):118:119 -> onCreate
     49:50:void onCreate(android.os.Bundle):124:125 -> onCreate
     51:52:void onCreate(android.os.Bundle):127:128 -> onCreate
-    1:1:boolean onMenuKeyUp():391:391 -> y
+    1:1:boolean onMenuKeyUp():397:397 -> y
 com.kamilkrzywda.astrolapse.SettingsActivity$1 -> com.kamilkrzywda.astrolapse.SettingsActivity$b:
     com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
     1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):140:140 -> <init>
     1:4:void onClick(android.view.View):143:146 -> onClick
 com.kamilkrzywda.astrolapse.SettingsActivity$10 -> com.kamilkrzywda.astrolapse.SettingsActivity$a:
     com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):309:309 -> <init>
-    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):312:312 -> onCheckedChanged
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):315:315 -> <init>
+    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):318:318 -> onCheckedChanged
 com.kamilkrzywda.astrolapse.SettingsActivity$2 -> com.kamilkrzywda.astrolapse.SettingsActivity$c:
     com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
     1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):149:149 -> <init>
@@ -268,47 +268,48 @@ com.kamilkrzywda.astrolapse.SettingsActivity$3 -> com.kamilkrzywda.astrolapse.Se
     1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):158:158 -> <init>
     1:1:void onProgressChanged(android.widget.SeekBar,int,boolean):164:164 -> onProgressChanged
     2:3:void onProgressChanged(android.widget.SeekBar,int,boolean):169:170 -> onProgressChanged
-    4:5:void onProgressChanged(android.widget.SeekBar,int,boolean):173:174 -> onProgressChanged
-    6:7:void onProgressChanged(android.widget.SeekBar,int,boolean):178:179 -> onProgressChanged
-    8:8:void onProgressChanged(android.widget.SeekBar,int,boolean):181:181 -> onProgressChanged
-    9:9:void onProgressChanged(android.widget.SeekBar,int,boolean):183:183 -> onProgressChanged
+    4:5:void onProgressChanged(android.widget.SeekBar,int,boolean):174:175 -> onProgressChanged
+    6:7:void onProgressChanged(android.widget.SeekBar,int,boolean):179:180 -> onProgressChanged
+    8:9:void onProgressChanged(android.widget.SeekBar,int,boolean):184:185 -> onProgressChanged
+    10:10:void onProgressChanged(android.widget.SeekBar,int,boolean):187:187 -> onProgressChanged
+    11:11:void onProgressChanged(android.widget.SeekBar,int,boolean):189:189 -> onProgressChanged
 com.kamilkrzywda.astrolapse.SettingsActivity$4 -> com.kamilkrzywda.astrolapse.SettingsActivity$e:
     com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):191:191 -> <init>
-    1:1:void onProgressChanged(android.widget.SeekBar,int,boolean):196:196 -> onProgressChanged
-    2:2:void onProgressChanged(android.widget.SeekBar,int,boolean):201:201 -> onProgressChanged
-    3:3:void onProgressChanged(android.widget.SeekBar,int,boolean):204:204 -> onProgressChanged
-    4:4:void onProgressChanged(android.widget.SeekBar,int,boolean):207:207 -> onProgressChanged
-    5:5:void onProgressChanged(android.widget.SeekBar,int,boolean):210:210 -> onProgressChanged
-    6:6:void onProgressChanged(android.widget.SeekBar,int,boolean):213:213 -> onProgressChanged
-    7:7:void onProgressChanged(android.widget.SeekBar,int,boolean):215:215 -> onProgressChanged
-    8:8:void onProgressChanged(android.widget.SeekBar,int,boolean):218:218 -> onProgressChanged
-    9:10:void onProgressChanged(android.widget.SeekBar,int,boolean):222:223 -> onProgressChanged
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):197:197 -> <init>
+    1:1:void onProgressChanged(android.widget.SeekBar,int,boolean):202:202 -> onProgressChanged
+    2:2:void onProgressChanged(android.widget.SeekBar,int,boolean):207:207 -> onProgressChanged
+    3:3:void onProgressChanged(android.widget.SeekBar,int,boolean):210:210 -> onProgressChanged
+    4:4:void onProgressChanged(android.widget.SeekBar,int,boolean):213:213 -> onProgressChanged
+    5:5:void onProgressChanged(android.widget.SeekBar,int,boolean):216:216 -> onProgressChanged
+    6:6:void onProgressChanged(android.widget.SeekBar,int,boolean):219:219 -> onProgressChanged
+    7:7:void onProgressChanged(android.widget.SeekBar,int,boolean):221:221 -> onProgressChanged
+    8:8:void onProgressChanged(android.widget.SeekBar,int,boolean):224:224 -> onProgressChanged
+    9:10:void onProgressChanged(android.widget.SeekBar,int,boolean):228:229 -> onProgressChanged
 com.kamilkrzywda.astrolapse.SettingsActivity$5 -> com.kamilkrzywda.astrolapse.SettingsActivity$f:
     com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):231:231 -> <init>
-    1:1:void onProgressChanged(android.widget.SeekBar,int,boolean):237:237 -> onProgressChanged
-    2:3:void onProgressChanged(android.widget.SeekBar,int,boolean):240:241 -> onProgressChanged
-    4:5:void onProgressChanged(android.widget.SeekBar,int,boolean):246:247 -> onProgressChanged
-    6:7:void onProgressChanged(android.widget.SeekBar,int,boolean):251:252 -> onProgressChanged
-    8:9:void onProgressChanged(android.widget.SeekBar,int,boolean):255:256 -> onProgressChanged
-    10:10:void onProgressChanged(android.widget.SeekBar,int,boolean):258:258 -> onProgressChanged
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):237:237 -> <init>
+    1:1:void onProgressChanged(android.widget.SeekBar,int,boolean):243:243 -> onProgressChanged
+    2:3:void onProgressChanged(android.widget.SeekBar,int,boolean):246:247 -> onProgressChanged
+    4:5:void onProgressChanged(android.widget.SeekBar,int,boolean):252:253 -> onProgressChanged
+    6:7:void onProgressChanged(android.widget.SeekBar,int,boolean):257:258 -> onProgressChanged
+    8:9:void onProgressChanged(android.widget.SeekBar,int,boolean):261:262 -> onProgressChanged
+    10:10:void onProgressChanged(android.widget.SeekBar,int,boolean):264:264 -> onProgressChanged
 com.kamilkrzywda.astrolapse.SettingsActivity$6 -> com.kamilkrzywda.astrolapse.SettingsActivity$g:
     com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):268:268 -> <init>
-    1:4:void onItemSelected(android.widget.AdapterView,android.view.View,int,long):271:274 -> onItemSelected
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):274:274 -> <init>
+    1:4:void onItemSelected(android.widget.AdapterView,android.view.View,int,long):277:280 -> onItemSelected
 com.kamilkrzywda.astrolapse.SettingsActivity$7 -> com.kamilkrzywda.astrolapse.SettingsActivity$h:
     com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):281:281 -> <init>
-    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):284:284 -> onCheckedChanged
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):287:287 -> <init>
+    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):290:290 -> onCheckedChanged
 com.kamilkrzywda.astrolapse.SettingsActivity$8 -> com.kamilkrzywda.astrolapse.SettingsActivity$i:
     com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):288:288 -> <init>
-    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):291:291 -> onCheckedChanged
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):294:294 -> <init>
+    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):297:297 -> onCheckedChanged
 com.kamilkrzywda.astrolapse.SettingsActivity$9 -> com.kamilkrzywda.astrolapse.SettingsActivity$j:
     com.kamilkrzywda.astrolapse.SettingsActivity this$0 -> a
-    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):302:302 -> <init>
-    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):305:305 -> onCheckedChanged
+    1:1:void <init>(com.kamilkrzywda.astrolapse.SettingsActivity):308:308 -> <init>
+    1:1:void onCheckedChanged(android.widget.CompoundButton,boolean):311:311 -> onCheckedChanged
 com.kamilkrzywda.astrolapse.ShootActivity -> com.kamilkrzywda.astrolapse.ShootActivity:
     boolean stopPicturePreview -> k
     boolean takingPicture -> l
@@ -326,27 +327,27 @@ com.kamilkrzywda.astrolapse.ShootActivity -> com.kamilkrzywda.astrolapse.ShootAc
     java.lang.Runnable shootRunnable -> o
     1:1:void <init>():23:23 -> <init>
     2:3:void <init>():50:51 -> <init>
-    1:2:java.lang.String getBatteryPercentage():269:270 -> J
-    3:4:java.lang.String getBatteryPercentage():272:273 -> J
-    5:6:java.lang.String getBatteryPercentage():275:276 -> J
-    7:7:java.lang.String getBatteryPercentage():286:286 -> J
-    1:1:java.lang.String getRemainingTime():290:290 -> K
-    1:1:void shoot():248:248 -> L
-    2:2:void shoot():250:250 -> L
-    3:4:void shoot():252:253 -> L
-    5:5:void shoot():255:255 -> L
-    6:6:void shoot():257:257 -> L
+    1:2:java.lang.String getBatteryPercentage():267:268 -> J
+    3:4:java.lang.String getBatteryPercentage():270:271 -> J
+    5:6:java.lang.String getBatteryPercentage():273:274 -> J
+    7:7:java.lang.String getBatteryPercentage():284:284 -> J
+    1:1:java.lang.String getRemainingTime():288:288 -> K
+    1:1:void shoot():246:246 -> L
+    2:2:void shoot():248:248 -> L
+    3:4:void shoot():250:251 -> L
+    5:5:void shoot():253:253 -> L
+    6:6:void shoot():255:255 -> L
     1:1:boolean access$000(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> a
     2:2:boolean access$002(com.kamilkrzywda.astrolapse.ShootActivity,boolean):23:23 -> a
     1:1:android.hardware.Camera access$100(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> b
     2:2:boolean access$502(com.kamilkrzywda.astrolapse.ShootActivity,boolean):23:23 -> b
-    3:3:void setColorDepth(boolean):308:308 -> b
-    4:4:void log(java.lang.String):313:313 -> b
+    3:3:void setColorDepth(boolean):306:306 -> b
+    4:4:void log(java.lang.String):311:311 -> b
     1:1:void access$1000(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> c
     1:1:android.widget.TextView access$1100(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> d
     1:1:java.lang.String access$1200(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> e
     1:1:android.widget.TextView access$1300(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> f
-    2:2:void onAnyKeyDown():295:295 -> f
+    2:2:void onAnyKeyDown():293:293 -> f
     1:1:java.lang.String access$1400(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> g
     1:1:android.widget.TextView access$1500(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> h
     1:1:android.view.SurfaceView access$200(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> i
@@ -356,53 +357,53 @@ com.kamilkrzywda.astrolapse.ShootActivity -> com.kamilkrzywda.astrolapse.ShootAc
     1:1:com.sony.scalar.hardware.CameraEx access$600(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> m
     1:1:java.lang.Runnable access$700(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> n
     1:1:android.os.Handler access$800(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> o
-    1:1:void onCreate(android.os.Bundle):96:96 -> onCreate
-    2:3:void onCreate(android.os.Bundle):98:99 -> onCreate
-    4:5:void onCreate(android.os.Bundle):101:102 -> onCreate
-    6:7:void onCreate(android.os.Bundle):104:105 -> onCreate
-    8:11:void onCreate(android.os.Bundle):108:111 -> onCreate
-    12:15:void onCreate(android.os.Bundle):113:116 -> onCreate
-    1:2:void onPause():201:202 -> onPause
-    3:3:void onPause():204:204 -> onPause
-    4:4:void onPause():206:206 -> onPause
-    5:6:void onPause():208:209 -> onPause
-    7:8:void onPause():211:212 -> onPause
-    9:9:void onPause():214:214 -> onPause
-    10:11:void onPause():219:220 -> onPause
-    12:13:void onPause():222:223 -> onPause
-    14:15:void onPause():226:227 -> onPause
-    16:18:void onPause():229:231 -> onPause
-    19:19:void onPause():234:234 -> onPause
-    1:1:void onResume():122:122 -> onResume
-    2:4:void onResume():124:126 -> onResume
-    5:5:void onResume():131:131 -> onResume
-    6:7:void onResume():134:135 -> onResume
-    8:8:void onResume():137:137 -> onResume
-    9:9:void onResume():143:143 -> onResume
-    10:10:void onResume():145:145 -> onResume
-    11:11:void onResume():149:149 -> onResume
-    12:12:void onResume():156:156 -> onResume
-    13:14:void onResume():163:164 -> onResume
-    15:15:void onResume():171:171 -> onResume
-    16:17:void onResume():177:178 -> onResume
-    18:18:void onResume():180:180 -> onResume
-    19:20:void onResume():182:183 -> onResume
-    21:21:void onResume():186:186 -> onResume
-    22:24:void onResume():188:190 -> onResume
+    1:1:void onCreate(android.os.Bundle):94:94 -> onCreate
+    2:3:void onCreate(android.os.Bundle):96:97 -> onCreate
+    4:5:void onCreate(android.os.Bundle):99:100 -> onCreate
+    6:7:void onCreate(android.os.Bundle):102:103 -> onCreate
+    8:11:void onCreate(android.os.Bundle):106:109 -> onCreate
+    12:15:void onCreate(android.os.Bundle):111:114 -> onCreate
+    1:2:void onPause():199:200 -> onPause
+    3:3:void onPause():202:202 -> onPause
+    4:4:void onPause():204:204 -> onPause
+    5:6:void onPause():206:207 -> onPause
+    7:8:void onPause():209:210 -> onPause
+    9:9:void onPause():212:212 -> onPause
+    10:11:void onPause():217:218 -> onPause
+    12:13:void onPause():220:221 -> onPause
+    14:15:void onPause():224:225 -> onPause
+    16:18:void onPause():227:229 -> onPause
+    19:19:void onPause():232:232 -> onPause
+    1:1:void onResume():120:120 -> onResume
+    2:4:void onResume():122:124 -> onResume
+    5:5:void onResume():129:129 -> onResume
+    6:7:void onResume():132:133 -> onResume
+    8:8:void onResume():135:135 -> onResume
+    9:9:void onResume():141:141 -> onResume
+    10:10:void onResume():143:143 -> onResume
+    11:11:void onResume():147:147 -> onResume
+    12:12:void onResume():154:154 -> onResume
+    13:14:void onResume():161:162 -> onResume
+    15:15:void onResume():169:169 -> onResume
+    16:17:void onResume():175:176 -> onResume
+    18:18:void onResume():178:178 -> onResume
+    19:20:void onResume():180:181 -> onResume
+    21:21:void onResume():184:184 -> onResume
+    22:24:void onResume():186:188 -> onResume
     1:1:int access$900(com.kamilkrzywda.astrolapse.ShootActivity):23:23 -> p
-    1:2:void surfaceCreated(android.view.SurfaceHolder):241:242 -> surfaceCreated
-    1:1:boolean onMenuKeyUp():195:195 -> y
+    1:2:void surfaceCreated(android.view.SurfaceHolder):239:240 -> surfaceCreated
+    1:1:boolean onMenuKeyUp():193:193 -> y
 com.kamilkrzywda.astrolapse.ShootActivity$1 -> com.kamilkrzywda.astrolapse.ShootActivity$a:
     com.kamilkrzywda.astrolapse.ShootActivity this$0 -> a
     1:1:void <init>(com.kamilkrzywda.astrolapse.ShootActivity):52:52 -> <init>
     1:6:void run():56:61 -> run
-    7:16:void run():64:73 -> run
-    17:18:void run():75:76 -> run
+    7:14:void run():64:71 -> run
+    15:16:void run():73:74 -> run
 com.kamilkrzywda.astrolapse.ShootActivity$1$1 -> com.kamilkrzywda.astrolapse.ShootActivity$a$a:
     com.kamilkrzywda.astrolapse.ShootActivity$1 this$1 -> a
-    1:1:void <init>(com.kamilkrzywda.astrolapse.ShootActivity$1):76:76 -> <init>
-    1:1:void run():86:86 -> run
+    1:1:void <init>(com.kamilkrzywda.astrolapse.ShootActivity$1):74:74 -> <init>
+    1:1:void run():84:84 -> run
 com.kamilkrzywda.astrolapse.ShootActivity$2 -> com.kamilkrzywda.astrolapse.ShootActivity$b:
     com.kamilkrzywda.astrolapse.ShootActivity this$0 -> a
-    1:1:void <init>(com.kamilkrzywda.astrolapse.ShootActivity):257:257 -> <init>
-    1:3:void run():260:262 -> run
+    1:1:void <init>(com.kamilkrzywda.astrolapse.ShootActivity):255:255 -> <init>
+    1:3:void run():258:260 -> run

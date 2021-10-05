@@ -93,7 +93,7 @@ public class SettingsActivity extends BaseActivity
         cbMF   = (CheckBox) findViewById(R.id.cbMF);
         cbDOFF = (CheckBox) findViewById(R.id.cbDOFF);
 
-        sbInterval.setMax(119);
+        sbInterval.setMax(64);
         sbInterval.setOnSeekBarChangeListener(sbIntervalOnSeekBarChangeListener);
         sbInterval.setProgress(settings.rawInterval);
         sbIntervalOnSeekBarChangeListener.onProgressChanged(sbInterval, settings.rawInterval, false);
@@ -164,15 +164,21 @@ public class SettingsActivity extends BaseActivity
             settings.rawInterval = i;
 
             i++;
-
-            if( i<=60 ){
+            
+            if(i <= 30) {
                 settings.interval = i;
                 intervalTextValue = Integer.toString((int) settings.interval);
                 intervalUnit = "s";
-            }else{
-                settings.interval = (i - 60) * (i - 60) + 60;
+            }
+            else if(i <= 34) {
+                settings.interval = (i-28) * 15;
                 intervalTextValue = Integer.toString((int) settings.interval);
                 intervalUnit = "s";
+            }
+            else {
+                settings.interval = (i-33) * 60;
+                intervalTextValue = Integer.toString((int) settings.interval / 60);
+                intervalUnit = "min";
             }
 
             tvIntervalValue.setText(intervalTextValue);

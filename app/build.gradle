@@ -9,7 +9,7 @@ android {
         //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 10
         versionCode 7
-        versionName "1.5.7"
+        versionName "1.5.8"
     }
     buildTypes {
         release {
